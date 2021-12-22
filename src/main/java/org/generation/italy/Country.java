@@ -136,4 +136,11 @@ public class Country {
 	public void setRegionId(int regionId) {
 		this.regionId = regionId;
 	}
+
+	@Override
+	public String toString() {
+		return "Country [countryId=" + countryId + ", " + (name != null ? "name=" + name + ", " : "") + "area=" + area
+				+ ", " + (nDay != null ? "nDay=" + nDay + ", " : "") + "countryCode2=" + countryCode2
+				+ ", countryCode3=" + countryCode3 + ", regionId=" + regionId + "]";
+	}
 }
